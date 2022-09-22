@@ -1,0 +1,15 @@
+JSON.parse(
+    await(
+        await fetch("https://iluxzcviluxzcihyg-default-rtdb.firebaseio.com/aula1/.json",
+        {
+            method: "POST",
+            body: JSON.stringify({
+
+                email: "jao@lindao.com",
+                nome: "jaolindao"
+            })
+
+        })
+    )
+.text());
+
